@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+</head>
+<body>
+    <script>
+
+        var a =document.createElement("h1")
+        a.innerHTML="OTP Generator"
+        a.style.textAlign="center"
+        document.body.appendChild(a)
+
+        var b = document.createElement("div")
+    
+        b.style.margin="0 auto"
+        document.body.appendChild(b)
+
+        var d = document.createElement("h2")
+        d.style.textAlign="center"
+        b.appendChild(d)
+
+        var btn = document.createElement("button")
+        btn.innerHTML="Generate OTP"
+        btn.style.fontWeight="bold"
+        btn.style.fontSize="20px"
+        btn.style.cursor="pointer"
+        btn.style.marginLeft="660px"
+        document.body.appendChild(btn)
+        btn.style.height="50px"
+        btn.style.width="200px"
+        btn.style.borderRadius="40px"
+        btn.style.backgroundColor="orange"
+
+        btn.onclick=g
+
+        //functions
+        function g (){
+            d.innerHTML= Math.floor(Math.random()*1000000)
+        }
+
+    </script>
+</body>
+</html>
